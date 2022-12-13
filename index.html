@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-       <form action="https://business.form-mailer.jp/fm/service/Forms/complete" method="post" name="form1" ENCTYPE="multipart/form-data" accept-charset="UTF-8">
-      <input type="hidden" name="key" value="11f3567b176247">
+          <form action="https://ssl.form-mailer.jp/fm/service/Forms/confirm" method="post" name="form1" ENCTYPE="multipart/form-data" accept-charset="UTF-8">
+      <input type="hidden" name="key" value="279e7061737040">
+      <h1>123</h1>
+      <p>123456</p>
 
       *は必須項目です
 
@@ -12,19 +14,8 @@
         *名前
       </p>
       <p>
-        姓 <input name="field_2952866_sei" type="text" placeholder="セイ">
-        名 <input name="field_2952866_mei" type="text" placeholder="メイ">
-        テスト
-      </p>
-
-      <!-- phone -->
-      <p>
-        連絡先
-      </p>
-      <p>
-        <input name="field_2961434_1" type="text" maxlength="4" placeholder="03">-
-        <input name="field_2961434_2" type="text" maxlength="4" placeholder="1234">-
-        <input name="field_2961434_3" type="text" maxlength="4" placeholder="1234">
+        姓 <input name="field_6375528_sei" type="text" placeholder="姓">
+        名 <input name="field_6375528_mei" type="text" placeholder="名">
       </p>
 
       <!-- email -->
@@ -32,17 +23,7 @@
         メールアドレス
       </p>
       <p>
-        <input name="field_2952867" type="text" size="30" placeholder="info@example.com">
-      </p>
-
-      <!-- radio -->
-      <p>
-        ラジオボタン
-      </p>
-      <p>
-        <input name="field_3043467" type="radio" value="0">選択肢1
-        <input name="field_3043467" type="radio" value="1">2
-        <input name="field_3043467" type="radio" value="2">3
+        <input name="field_6375529" type="text" size="30" placeholder="info@example.com">
       </p>
 
       <!-- text -->
@@ -50,43 +31,161 @@
         テキストフィールド
       </p>
       <p>
-        [ ラジオボタン ]で
-        [ 2 ]が選択されていない時は、入力内容は無効となります。<br>
-        <input name="field_3100743" type="text" value="" size="30"    >
+        <input name="field_6444915" type="text" value="" size="30"    >
       </p>
 
-      <!-- textarea -->
+      <!-- checkbox -->
       <p>
-        テキストエリア
+        チェックボックス
       </p>
       <p>
-        [ ラジオボタン ]で
-        [ 選択肢1 ]が選択されていない時は、入力内容は無効となります。<br>
-        <textarea name="field_3100913" cols="30" rows="5"    ></textarea>
+        <input name="field_6612800" type="checkbox" value="0" >A
+        <input name="field_6612800" type="checkbox" value="1" >B
+        <input name="field_6612800" type="checkbox" value="2" >C
       </p>
 
-      <!-- file -->
+      <!-- date -->
       <p>
-        ファイルフィールド
+        生年月日
       </p>
       <p>
-        <input name="field_2967360" type="file" size="30">
+        <input name="field_6375531_y" type="text" maxlength="4">年
+        <select name="field_6375531_m">
+          <option value="">--</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>月
+        <select name="field_6375531_d">
+          <option value="">--</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>日
       </p>
 
-      <!-- label -->
+      <!-- phone -->
       <p>
-        サンプル
+        連絡先
+      </p>
+      <p>
+        <input name="field_6375533_1" type="text" maxlength="4" placeholder="090">-
+        <input name="field_6375533_2" type="text" maxlength="4" placeholder="0000">-
+        <input name="field_6375533_3" type="text" maxlength="4" placeholder="0000">
       </p>
 
+      <!-- address -->
+      <p>
+        住所
+      </p>
+      <p>
+        〒<input name="field_6643884_zip1" type="text" maxlength="3">-<input name="field_6643884_zip2" type="text" maxlength="4"><br>
+        都道府県<br>
+        <select name="field_6643884_pref">
+          <option value="">----</option>
+          <option value="北海道">北海道</option>
+          <option value="青森県">青森県</option>
+          <option value="岩手県">岩手県</option>
+          <option value="宮城県">宮城県</option>
+          <option value="秋田県">秋田県</option>
+          <option value="山形県">山形県</option>
+          <option value="福島県">福島県</option>
+          <option value="茨城県">茨城県</option>
+          <option value="栃木県">栃木県</option>
+          <option value="群馬県">群馬県</option>
+          <option value="埼玉県">埼玉県</option>
+          <option value="千葉県">千葉県</option>
+          <option value="東京都">東京都</option>
+          <option value="神奈川県">神奈川県</option>
+          <option value="新潟県">新潟県</option>
+          <option value="富山県">富山県</option>
+          <option value="石川県">石川県</option>
+          <option value="福井県">福井県</option>
+          <option value="山梨県">山梨県</option>
+          <option value="長野県">長野県</option>
+          <option value="岐阜県">岐阜県</option>
+          <option value="静岡県">静岡県</option>
+          <option value="愛知県">愛知県</option>
+          <option value="三重県">三重県</option>
+          <option value="滋賀県">滋賀県</option>
+          <option value="京都府">京都府</option>
+          <option value="大阪府">大阪府</option>
+          <option value="兵庫県">兵庫県</option>
+          <option value="奈良県">奈良県</option>
+          <option value="和歌山県">和歌山県</option>
+          <option value="鳥取県">鳥取県</option>
+          <option value="島根県">島根県</option>
+          <option value="岡山県">岡山県</option>
+          <option value="広島県">広島県</option>
+          <option value="山口県">山口県</option>
+          <option value="徳島県">徳島県</option>
+          <option value="香川県">香川県</option>
+          <option value="愛媛県">愛媛県</option>
+          <option value="高知県">高知県</option>
+          <option value="福岡県">福岡県</option>
+          <option value="佐賀県">佐賀県</option>
+          <option value="長崎県">長崎県</option>
+          <option value="熊本県">熊本県</option>
+          <option value="大分県">大分県</option>
+          <option value="宮崎県">宮崎県</option>
+          <option value="鹿児島県">鹿児島県</option>
+          <option value="沖縄県">沖縄県</option>
+          <option value="その他">その他</option>
+        </select><br>
+        市区町村番地<br>
+        <input name="field_6643884_addr1" type="text"><br>
+        マンション・ビル名<br>
+        <input name="field_6643884_addr2" type="text">
+      </p>
 
 
 
 
 
       <p>
-        <input name="submit" type="submit" value="決定する">
+        <input name="submit" type="submit" value="確認画面へ">
       </p>
 
+      <p>
+        <a href="https://www.form-mailer.jp/?utm_source=https://ssl.form-mailer.jp/fms/279e7061737040&utm_medium=ownedmedia&utm_campaign=powered-by-formmailer" target="_blank" id="powered">Powered by FormMailer.</a>
+      </p>
 
       <input type="hidden" name="code" value="utf8">
     </form>
