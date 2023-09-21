@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-                  <form action="https://business.form-mailer.jp/fm/service/Forms/complete" method="post" name="form1" ENCTYPE="multipart/form-data" accept-charset="UTF-8">
+                   <form action="https://business.form-mailer.jp/fm/service/Forms/confirm" method="post" name="form1" ENCTYPE="multipart/form-data" accept-charset="UTF-8">
       <input type="hidden" name="key" value="6ee80095204988">
       <h1>テスト</h1>
 
@@ -319,7 +319,7 @@
 
       <!-- radio -->
       <p>
-        ラジオボタン
+        選択
       </p>
       <p>
         <input name="field_3484142" type="radio" value="0" >選択肢1
@@ -328,10 +328,15 @@
 
       <!-- checkbox -->
       <p>
-        チェックボックス
+        *チェックボックス
       </p>
       <p>
         <input name="field_3484143" type="checkbox" value="0" >選択肢1
+        <input name="field_3484143" type="checkbox" value="1" >選択肢2
+        <input name="field_3484143" type="checkbox" value="2" >選択肢3
+        <input name="field_3484143" type="checkbox" value="3" >選択肢4
+        <input name="field_3484143" type="checkbox" value="4" >選択肢5
+        <input name="field_3484143" type="checkbox" value="5" >選択肢6
       </p>
 
       <!-- textarea -->
@@ -350,7 +355,7 @@
         テキストフィールド2
       </p>
       <p>
-        [ ラジオボタン ]で
+        [ 選択 ]で
         [ 選択肢2 ]が選択されていない時は、入力内容は無効となります。<br>
         <input name="field_3494283" type="text" value="" size="30"  placeholder="" >
       </p>
@@ -363,9 +368,33 @@
         <input name="field_3441068" type="text" size="30" placeholder="">
       </p>
 
+      <!-- file -->
+      <p>
+        ファイルアップロード
+      </p>
+      <p>
+        <input name="field_3580309" type="file" size="30" >
+      </p>
+
+      <!-- file -->
+      <p>
+        ファイルアップロード
+      </p>
+      <p>
+        <input name="field_3580310" type="file" size="30" >
+      </p>
+
+      <!-- file -->
+      <p>
+        ファイルアップロード
+      </p>
+      <p>
+        <input name="field_3580311" type="file" size="30" >
+      </p>
+
       <!-- agreement -->
       <p>
-        *規約への同意
+        規約への同意
       </p>
       <p>
         規約の内容を入力してください
@@ -375,13 +404,12 @@
 
 
       <p>
-        <input name="submit" type="submit" value="送信する">
+        <input name="submit" type="submit" value="確認画面へ">
       </p>
 
 
       <input type="hidden" name="code" value="utf8">
     </form>
-
   
            
             
