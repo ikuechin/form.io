@@ -1,98 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>名称未設定フォーム</title>
-<script language="JavaScript" type="text/javascript" charset="Shift_JIS" src="https://ssl-plus.form-mailer.jp/fm/common/js/jquery.js"></script>
-<script language="JavaScript" type="text/javascript" charset="Shift_JIS" src="https://ssl-plus.form-mailer.jp/fm/common/js/apps/userforms.js"></script>
-<link href="https://ssl-plus.form-mailer.jp/fm/common/css/1.css" rel="stylesheet" type="text/css" media="all">
-<style type="text/css">
-ul { margin: 0;padding: 0;display: block; }
-ul strong { display: block; }
-ul li { padding: .5em 0;display: block; }
-</style>
-
-</head>
-
-<body>
-
-<div id="container">
-
-
-<div id="contents">
 <form action="https://ssl-plus.form-mailer.jp/fm/service/Forms/confirm" method="post" name="form1" ENCTYPE="multipart/form-data">
 <input type="hidden" name="key" value="c1dba8aa2722" >
-<input type="hidden" name="form_c_width" id="form_c_width" value="65" >
-<input type="hidden" name="form_f_position" id="form_f_position" value="0" >
-<input type="hidden" name="form_item_fsize" id="form_item_fsize" value="0" >
-<input type="hidden" name="form_label_fsize" id="form_label_fsize" value="0" >
-<input type="hidden" name="form_item_margin" id="form_item_margin" value="5" >
-<input type="hidden" name="form_eof_field_flg" id="form_eof_field_flg" value="0" >
 <h1>名称未設定フォーム</h1>
 
-
-
-<dl><dt><span class="required">*</span>は必須項目です</dt></dl>
-
+*は必須項目です
 
 
 
 
-<dl id="formarea" style="clear:both;">
 <!-- name -->
-<dt>
-<label for="field_24268_sei">名前</label>
-</dt>
-<dd>
-<table><tr><td>
-<label for="field_24268_sei">姓</label>
-<input name="field_24268_sei" type="text" id="field_24268_sei" style="width:100px;" class="text">
-<label class="field_24268_mei">名</label>
-<input name="field_24268_mei" type="text" id="field_24268_mei" style="width:100px;" class="text">
-
-
-
-</td></tr></table>
-</dd>
+<p>名前</p>
+<p>姓
+<input name="field_24268_sei" type="text" style="width:100px;">
+名
+<input name="field_24268_mei" type="text" style="width:100px;">
+</p>
 <!-- label -->
-<span class="label clearfix" style="clear:both;">サンプル</span>
+<p>サンプル</p>
 <!-- radio:sex -->
-<dt>
-性別
-</dt>
-<dd>
-<table><tr><td>
-<div class="space">
-<input name="field_24270" id="field_24270_0" type="radio" value="0"><span class="label"><label for="field_24270_0">男性</label></span> 
-<input name="field_24270" id="field_24270_1" type="radio" value="1"><span class="label"><label for="field_24270_1">女性</label></span> 
-
-</div>
-
-
-</td></tr></table>
-</dd>
+<p>性別</p>
+<p><input name="field_24270" type="radio" value="0">男性<input name="field_24270" type="radio" value="1">女性
+</p>
 <!-- text:mail -->
-<dt>
-<label for="field_43125">メールアドレス</label>
-</dt>
-<dd>
-<table><tr><td>
-<input name="field_43125" type="text" id="field_43125" size="30" class="text">
-
-
-
-</td></tr></table>
-</dd>
+<p>メールアドレス</p>
+<p><input name="field_43125" type="text" size="30">
+</p>
 <!-- symd -->
-<dt>
-<label for="field_24271_y">生年月日</label>
-</dt>
-<dd>
-<table><tr><td>
-<input name="field_24271_y" type="text" id="field_24271_y" style="width:50px;" maxlength="4" class="text"><span class="label">年</span>
+<p>生年月日</p>
+<p><input name="field_24271_y" type="text" style="width:50px;" maxlength="4">年
 <select name="field_24271_m">
 <option value="">--</option>
 <option value="1">1</option>
@@ -108,7 +45,7 @@ ul li { padding: .5em 0;display: block; }
 <option value="11">11</option>
 <option value="12">12</option>
 </select>
-<span class="label">月</span>
+月
 <select name="field_24271_d">
 <option value="">--</option>
 <option value="1">1</option>
@@ -143,24 +80,14 @@ ul li { padding: .5em 0;display: block; }
 <option value="30">30</option>
 <option value="31">31</option>
 </select>
-<span class="label">日</span>
-
-
-
-
-</td></tr></table>
-</dd>
+日
+</p>
 <!-- addr2 -->
-<dt>
-<label for="field_24272_zip1">住所</label>
-</dt>
-<dd>
-<table><tr><td>
-<span class="label">〒</span><input name="field_24272_zip1" type="text" id="field_24272_zip1" style="width:30px;" maxlength="3" class="text">
-<span class="label">-</span><input name="field_24272_zip2" type="text" id="field_24272_zip2" style="width:50px;" maxlength="4" class="text">
-
-<br><span class="label">都道府県</span>
-<br><select name="field_24272_pref" id="field_24272_pref">
+<p>住所</p>
+<p>〒<input name="field_24272_zip1" type="text" style="width:30px;" maxlength="3">
+-<input name="field_24272_zip2" type="text" style="width:50px;" maxlength="4">
+<br>都道府県
+<br><select name="field_24272_pref">
 <option value="">----</option>
 <option value="1">北海道</option>
 <option value="2">青森県</option>
@@ -211,72 +138,38 @@ ul li { padding: .5em 0;display: block; }
 <option value="47">沖縄県</option>
 <option value="99">その他</option>
 </select>
-<br><span class="label">市区町村番地</span>
-<br><input name="field_24272_addr1" type="text" id="field_24272_addr1" style="width:300px;" class="text">
-<br><span class="label">マンション・ビル名</span>
-<br><input name="field_24272_addr2" type="text" id="field_24272_addr2" style="width:300px;" class="text">
-
-
-
-
-
-
-</td></tr></table>
-</dd>
+<br>市区町村番地
+<br><input name="field_24272_addr1" type="text" style="width:300px;">
+<br>マンション・ビル名
+<br><input name="field_24272_addr2" type="text" style="width:300px;">
+</p>
 <!-- textarea -->
+<p>テキストエリア</p>
+<p>
 
-<dt>
-<label for="field_40756">テキストエリア</label>
-</dt>
-<dd>
-<table><tr><td>
+<textarea name="field_40756" cols="30" rows="5"></textarea>
 
-
-<textarea name="field_40756" cols="30" rows="5" id="field_40756"></textarea>
-
-
-
-</td></tr></table>
-</dd>
-
-
-</dl>
-
-
+</p>
 
 
 
 <!-- charset -->
 <input type="hidden" name="code" value="utf8">
 <!-- charset -->
-
 <!-- paypal no confirm alert -->
 
 <!-- paypal no confirm alert -->
+<p><input name="submit" type="submit" value="確認画面へ">
 
-<div class="align-center">
-<input name="submit" type="submit" id="submit" value="確認画面へ">
+</p>
+<!-- PayPal Logo -->
 
-</div>
+<!-- PayPal Logo -->
+
 </form>
 
 
-
-
-<!-- PayPal Logo -->
-
-<!-- PayPal Logo -->
-
-</div>
-
-
-
-</div>
-
-
-</body>
-</html>
-                             
+                
             
 </body>
 </html>
