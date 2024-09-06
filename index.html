@@ -1,117 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <form action="https://business.form-mailer.jp/fm/service/Forms/confirm" method="post" name="form1" ENCTYPE="multipart/form-data" accept-charset="UTF-8">
-      <input type="hidden" name="key" value="18ef5d0b252453">
-      <h1>返品、交換についてのお問合せ</h1>
+           <form action="https://business.form-mailer.jp/fm/service/Forms/confirm" method="post" name="form1" ENCTYPE="multipart/form-data" accept-charset="UTF-8">
+      <input type="hidden" name="key" value="06995cbe138341">
+      <h1>注文フォーム</h1>
 
       *は必須項目です
+
+      <!-- order -->
+
+    <table border="0" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>商品名</th>
+        <th>価格 (税込)</th>
+        <th>注文数</th>
+      </tr>
+      <tr>
+        <td>
+          商品A（Sサイズ）
+        </td>
+        <td>
+          500円
+          <input type="hidden" name="goods_78333_price" value ="500">
+        </td>
+        <td>
+          <select name="goods_78333_max">
+            <option value="0">0</option>
+            <option value="1">1</option>
+          </select>
+          
+        </td>
+      </tr>
+      <tr>
+        <td>
+          商品A（Mサイズ）
+        </td>
+        <td>
+          800円
+          <input type="hidden" name="goods_79937_price" value ="800">
+        </td>
+        <td>
+          <select name="goods_79937_max">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          
+        </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th>お支払い方法の指定</th>
+        <td>
+          <select name="order_pay">
+            <option value="">------</option>
+            <option value="4">PayPalでお支払い</option>
+            <option value="99">指定なし</option>
+          </select>
+        </td>
+      </tr>
+
+    </table>
+
+    <!-- order -->
 
 
       <!-- name -->
       <p>
-        名前
+        *名前
       </p>
       <p>
-        姓 <input name="field_4247789_sei" type="text" placeholder="">
-        名 <input name="field_4247789_mei" type="text" placeholder="">
+        姓 <input name="field_2304820_sei" type="text" placeholder="姓">
+        名 <input name="field_2304820_mei" type="text" placeholder="名">
       </p>
 
-      <!-- email -->
-      <p>
-        メールアドレス
-      </p>
-      <p>
-        <input name="field_4247790" type="text" size="30" placeholder="">
-      </p>
-
-      <!-- radio -->
-      <p>
-        性別
-      </p>
-      <p>
-        <input name="field_4247791" type="radio" value="0" >男性
-        <input name="field_4247791" type="radio" value="1" >女性
-      </p>
-
-      <!-- dropdown -->
-      <p>
-        和暦
-      </p>
-      <p>
-        <select name="field_4252682">
-          <option value="">------</option>
-          <option value="0" >昭和</option>
-          <option value="1" >平成</option>
-          <option value="2" >令和</option>
-        </select>
-      </p>
-
-      <!-- birth date -->
-      <p>
-        生年月日
-      </p>
-      <p>
-        <input name="field_4247792_y" type="text" maxlength="4">年
-        <select name="field_4247792_m">
-          <option value="">--</option>
-          <option value="01">1</option>
-          <option value="02">2</option>
-          <option value="03">3</option>
-          <option value="04">4</option>
-          <option value="05">5</option>
-          <option value="06">6</option>
-          <option value="07">7</option>
-          <option value="08">8</option>
-          <option value="09">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-        </select>月
-        <select name="field_4247792_d">
-          <option value="">--</option>
-          <option value="01">1</option>
-          <option value="02">2</option>
-          <option value="03">3</option>
-          <option value="04">4</option>
-          <option value="05">5</option>
-          <option value="06">6</option>
-          <option value="07">7</option>
-          <option value="08">8</option>
-          <option value="09">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-          <option value="16">16</option>
-          <option value="17">17</option>
-          <option value="18">18</option>
-          <option value="19">19</option>
-          <option value="20">20</option>
-          <option value="21">21</option>
-          <option value="22">22</option>
-          <option value="23">23</option>
-          <option value="24">24</option>
-          <option value="25">25</option>
-          <option value="26">26</option>
-          <option value="27">27</option>
-          <option value="28">28</option>
-          <option value="29">29</option>
-          <option value="30">30</option>
-          <option value="31">31</option>
-        </select>日
-      </p>
+      <!-- hidden -->
+      <input name="field_2959382" type="hidden" value=""  >
 
       <!-- address -->
       <p>
         住所
       </p>
       <p>
-        〒<input name="field_4247793_zip1" type="text" maxlength="3">-<input name="field_4247793_zip2" type="text" maxlength="4"><br>
+        〒<input name="field_3021247_zip1" type="text" maxlength="3">-<input name="field_3021247_zip2" type="text" maxlength="4"><br>
         都道府県<br>
-        <select name="field_4247793_pref">
+        <select name="field_3021247_pref">
           <option value="">----</option>
           <option value="北海道">北海道</option>
           <option value="青森県">青森県</option>
@@ -163,11 +148,21 @@
           <option value="その他">その他</option>
         </select><br>
         市区町村<br>
-        <input name="field_4247793_city" type="text"><br>
+        <input name="field_3021247_city" type="text"><br>
         番地<br>
-        <input name="field_4247793_block" type="text"><br>
+        <input name="field_3021247_block" type="text"><br>
         マンション・ビル名<br>
-        <input name="field_4247793_building" type="text">
+        <input name="field_3021247_building" type="text">
+      </p>
+
+      <!-- email -->
+      <p>
+        メールアドレス
+      </p>
+      <p>
+        <input name="field_2304821" type="text" size="30" placeholder="">
+        <br>
+        <input name="field_2304821_mcon" type="text" size="30" placeholder="確認用">
       </p>
 
       <!-- phone -->
@@ -175,9 +170,9 @@
         連絡先
       </p>
       <p>
-        <input name="field_4247794_1" type="text" maxlength="4" placeholder="">-
-        <input name="field_4247794_2" type="text" maxlength="4" placeholder="">-
-        <input name="field_4247794_3" type="text" maxlength="4" placeholder="">
+        <input name="field_2304825_1" type="text" maxlength="4" placeholder="">-
+        <input name="field_2304825_2" type="text" maxlength="4" placeholder="">-
+        <input name="field_2304825_3" type="text" maxlength="4" placeholder="">
       </p>
 
 
@@ -189,6 +184,7 @@
 
       <input type="hidden" name="code" value="utf8">
     </form>
+
 
             
       
