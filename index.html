@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-                         <form action="https://ssl.form-mailer.jp/fm/service/Forms/confirm" method="post" name="form1" ENCTYPE="multipart/form-data" accept-charset="UTF-8">
-      <input type="hidden" name="key" value="279e7061737040">
-      <h1>123</h1>
-      <p>123456</p>
+                             <form action="https://domain-test.f5.si/fm/service/Forms/confirm" method="post" name="form1" ENCTYPE="multipart/form-data" accept-charset="UTF-8">
+      <input type="hidden" name="key" value="18ef5d0b252453">
+      <h1>返品、交換についてのお問合せ</h1>
 
       *は必須項目です
 
 
       <!-- name -->
       <p>
-        *名前
+        名前
       </p>
       <p>
-        姓 <input name="field_6375528_sei" type="text" placeholder="姓">
-        名 <input name="field_6375528_mei" type="text" placeholder="名">
+        姓 <input name="field_4247789_sei" type="text" placeholder="">
+        名 <input name="field_4247789_mei" type="text" placeholder="">
       </p>
 
       <!-- email -->
@@ -23,59 +22,63 @@
         メールアドレス
       </p>
       <p>
-        <input name="field_6375529" type="text" size="30" placeholder="info@example.com">
+        <input name="field_4247790" type="text" size="30" placeholder="">
       </p>
 
-      <!-- text -->
+      <!-- radio -->
       <p>
-        テキストフィールド
+        性別
       </p>
       <p>
-        <input name="field_6444915" type="text" value="" size="30"   >
-      </p>
-
-      <!-- checkbox -->
-      <p>
-        チェックボックス
-      </p>
-      <p>
-        <input name="field_6612800" type="checkbox" value="0" >A
-        <input name="field_6612800" type="checkbox" value="1" >B
-        <input name="field_6612800" type="checkbox" value="2" >C
+        <input name="field_4247791" type="radio" value="0" >男性
+        <input name="field_4247791" type="radio" value="1" >女性
       </p>
 
-      <!-- date -->
+      <!-- dropdown -->
+      <p>
+        和暦
+      </p>
+      <p>
+        <select name="field_4252682">
+          <option value="">------</option>
+          <option value="0" >昭和</option>
+          <option value="1" >平成</option>
+          <option value="2" >令和</option>
+        </select>
+      </p>
+
+      <!-- birth date -->
       <p>
         生年月日
       </p>
       <p>
-        <input name="field_6375531_y" type="text" maxlength="4">年
-        <select name="field_6375531_m">
+        <input name="field_4247792_y" type="text" maxlength="4">年
+        <select name="field_4247792_m">
           <option value="">--</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
+          <option value="01">1</option>
+          <option value="02">2</option>
+          <option value="03">3</option>
+          <option value="04">4</option>
+          <option value="05">5</option>
+          <option value="06">6</option>
+          <option value="07">7</option>
+          <option value="08">8</option>
+          <option value="09">9</option>
           <option value="10">10</option>
           <option value="11">11</option>
           <option value="12">12</option>
         </select>月
-        <select name="field_6375531_d">
+        <select name="field_4247792_d">
           <option value="">--</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
+          <option value="01">1</option>
+          <option value="02">2</option>
+          <option value="03">3</option>
+          <option value="04">4</option>
+          <option value="05">5</option>
+          <option value="06">6</option>
+          <option value="07">7</option>
+          <option value="08">8</option>
+          <option value="09">9</option>
           <option value="10">10</option>
           <option value="11">11</option>
           <option value="12">12</option>
@@ -101,24 +104,14 @@
         </select>日
       </p>
 
-      <!-- phone -->
-      <p>
-        *連絡先
-      </p>
-      <p>
-        <input name="field_6375533_1" type="text" maxlength="4" placeholder="090">-
-        <input name="field_6375533_2" type="text" maxlength="4" placeholder="0000">-
-        <input name="field_6375533_3" type="text" maxlength="4" placeholder="0000">
-      </p>
-
       <!-- address -->
       <p>
         住所
       </p>
       <p>
-        〒<input name="field_6643884_zip1" type="text" maxlength="3">-<input name="field_6643884_zip2" type="text" maxlength="4"><br>
+        〒<input name="field_4247793_zip1" type="text" maxlength="3">-<input name="field_4247793_zip2" type="text" maxlength="4"><br>
         都道府県<br>
-        <select name="field_6643884_pref">
+        <select name="field_4247793_pref">
           <option value="">----</option>
           <option value="北海道">北海道</option>
           <option value="青森県">青森県</option>
@@ -170,25 +163,33 @@
           <option value="その他">その他</option>
         </select><br>
         市区町村<br>
-        <input name="field_6643884_city" type="text"><br>
+        <input name="field_4247793_city" type="text"><br>
         番地<br>
-        <input name="field_6643884_block" type="text"><br>
+        <input name="field_4247793_block" type="text"><br>
         マンション・ビル名<br>
-        <input name="field_6643884_building" type="text">
+        <input name="field_4247793_building" type="text">
+      </p>
+
+      <!-- phone -->
+      <p>
+        連絡先
+      </p>
+      <p>
+        <input name="field_4247794_1" type="text" maxlength="4" placeholder="">-
+        <input name="field_4247794_2" type="text" maxlength="4" placeholder="">-
+        <input name="field_4247794_3" type="text" maxlength="4" placeholder="">
       </p>
 
 
 
       <p>
         <input name="submit" type="submit" value="確認画面へ">
-        <input type="button" value="もどる" onclick="location.href='https://www.form-mailer.jp/';">
       </p>
 
-      <p>
-        <a href="https://www.form-mailer.jp/?utm_source=https://ssl.form-mailer.jp/fms/279e7061737040&utm_medium=ownedmedia&utm_campaign=powered-by-formmailer" target="_blank" id="powered">Powered by FormMailer.</a>
-      </p>
 
       <input type="hidden" name="code" value="utf8">
+    </form>
+
     </form>
 
 </body>
